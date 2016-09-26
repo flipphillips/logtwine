@@ -1,2 +1,3 @@
-
-*.creds
+twine.config
+*.sublime-workspace
+.DS_Store

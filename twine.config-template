@@ -1,0 +1,10 @@
+#
+# a config file for the twine -> databin script
+#
+# the script looks for this in /usr/local/etc, /etc, and the local directory
+#
+
+EMAIL=""
+PASSWORD=""
+TWINEID=""
+DATABIN=""
