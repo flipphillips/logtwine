@@ -38,6 +38,7 @@ TEMP=`bc <<< "scale=2; $TEMP/100"`
 # these are obviously not necessary, but hesful for debugging
 $DROP $DATABIN time `date "+%m%d%H%M%Y.%S"`
 $DROP $DATABIN host `hostname`
+$DROP $DATABIN ssid-count `defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences | grep "SSIDString =" | wc -l`
 
 $DROP $DATABIN temperature $TEMP
 
