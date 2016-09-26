@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>UserName</key>
+  <string>nobody</string>
+  <key>GroupName</key>
+  <string>nobody</string>
+  <key>InitGroups</key>
+  <true/>
   <key>KeepAlive</key>
   <false/>
   <key>Label</key>

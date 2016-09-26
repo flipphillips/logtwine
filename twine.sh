@@ -36,10 +36,10 @@ TEMP=`cat /tmp/temp.txt | awk -F"," '{print $7}' | awk -F"]" '{print $1}' | tr -
 TEMP=`bc <<< "scale=2; $TEMP/100"`
 
 # these are obviously not necessary, but hesful for debugging
-$DROP $DATABIN time `date "+%m%d%H%M%Y.%S"`
+$DROP $DATABIN time "`date`"
 $DROP $DATABIN host `hostname`
 $DROP $DATABIN ssid-count `defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences | grep "SSIDString =" | wc -l`
 
-$DROP $DATABIN temperature $TEMP
+$DROP $DATABIN temperature "$TEMP F"
 
 $DROP $DATABIN --send &> /tmp/twine.log
